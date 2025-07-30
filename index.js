@@ -7,7 +7,7 @@ const port = 3000;
 
 app.use(cors());
 app.use(express.json());
-
+app.set("json spaces", 3)
 const client = createClient({
   url: 'libsql://libreria-tursotest56.aws-us-east-1.turso.io',
   authToken: 'eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJhIjoicnciLCJpYXQiOjE3NTM4ODkxMTUsImlkIjoiNzBkMTk2ZGUtZjRiNS00MTgyLTg2NzAtMDgwYmY4YjhjM2QxIiwicmlkIjoiYmM4NjliZDItYmE3OS00OTRmLWFkZDQtODcwOWYyN2ZlMmFjIn0.L5d87xHJZmJsSaZDEft78LVWNgAzQWoD2o7L0UreEEwUQZDHdwN3qYToRQLAbFB-z51-rymFwZbfP7cMpcRwCA'
